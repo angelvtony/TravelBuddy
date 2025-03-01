@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TravelBuddy</string>
+    <string name="enter_drop_off_location">Enter Drop-off Location</string>
+    <string name="enter_pickup_location">Enter Pickup Location</string>
+    <string name="select_pickup_date">Select Pickup Date</string>
+    <string name="pickup_date">Pickup Date:</string>
+    <string name="drop_off_date">Drop-off Date:</string>
+    <string name="search_on_kayak">Search on Kayak</string>
+</resources>
