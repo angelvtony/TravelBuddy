@@ -13,12 +13,14 @@ android {
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
-
+        val apiKey: String = project.findProperty("PLACES_API_KEY") as String? ?: ""
+        buildConfigField("String", "PLACES_API_KEY", "\"$apiKey\"")
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildFeatures{
         viewBinding = true
+        buildConfig = true
     }
 
     buildTypes {

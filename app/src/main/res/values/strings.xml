@@ -6,4 +6,7 @@
     <string name="pickup_date">Pickup Date:</string>
     <string name="drop_off_date">Drop-off Date:</string>
     <string name="search_on_kayak">Search on Kayak</string>
+    <string name="places_api_key">${PLACES_API_KEY}</string>
+
+
 </resources>

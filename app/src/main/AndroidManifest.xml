@@ -18,12 +18,11 @@
         <activity
             android:name=".ui.MainActivity"
             android:exported="false"/>
-
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyDI7y5PSckG1tT8PTL6zd91sqNCwHHXfiI" />
+            android:value="@string/places_api_key" />
 
-            <activity
+        <activity
                 android:name=".ui.OnBoardActivity"
                 android:exported="true" >
             <intent-filter>

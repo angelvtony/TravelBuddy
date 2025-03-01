@@ -17,8 +17,10 @@ import com.google.android.libraries.places.widget.AutocompleteSupportFragment
 import com.google.android.libraries.places.widget.listener.PlaceSelectionListener
 import kotlinx.coroutines.launch
 import java.text.SimpleDateFormat
+import com.example.travelbuddy.BuildConfig
 import java.util.Calendar
 import java.util.Locale
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -39,7 +41,9 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        Places.initialize(applicationContext, "AIzaSyDI7y5PSckG1tT8PTL6zd91sqNCwHHXfiI")
+        val apiKey = BuildConfig.PLACES_API_KEY
+        Places.initialize(applicationContext, apiKey)
+
         setupAutoComplete()
 
         binding.pickupDateBtn.setOnClickListener { showDatePicker(true) }
